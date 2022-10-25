@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora</title>
+    <link rel="stylesheet" href="../css/calculator.css" />
+  </head>
+  <body>
+    <h2>Calculando</h2>
+    <br />
+    <br />
+    <div class="container-calc">
+      <p>Primeiro Número</p>
+      <br />
+      <input name="number1" id="num1" type="number" />
+      <br />
+      <p>Segundo Número</p>
+      <br />
+      <input name="number2" id="num2" type="number" />
+      <br />
+      <br />
+      <input type="radio" id="soma" name="radio" value="Soma" />
+      <label for="soma">Soma</label>
+      <br />
+      <input type="radio" id="sub" name="radio" value="Subtrair" />
+      <label for="subtrair">Subtração</label>
+      <br />
+      <input type="radio" id="mult" name="radio" value="Multiplica" />
+      <label for="multiplicar">Multiplicação</label>
+      <br />
+      <input type="radio" id="divi" name="radio" value="Dividir" />
+      <label for="divisao">Divisão</label>
+      <br />
+
+      <h5>O resultado é:</h5>
+
+      <input type="text" id="result" name="resultado" disabled="disabled" />
+      <br />
+      <button id="btn-calc" onclick="clicar()">Calcular</button>
+    </div>
+    <script src="../js/calculator.js"></script>
+  </body>
+</html>
